@@ -6,4 +6,4 @@ for i in range(x,y - 1):
     file_name = newfile +'{:04d}'.format(i)
     with open(file_name,'w') as f:
         f.write('ifconfig-push'+" "+str(ip + 2)+" "+str(ip + 1))
-        ip += 4
+        ip -= 4
